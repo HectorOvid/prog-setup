@@ -80,4 +80,4 @@ expect result in 3-4 weeks"
 - List of big points (epics) what we want and need to to next
 - Describe what the change of this epic is in a proposal: Problem, Solutions, Decision that shows a bit what and why we did it.
 - weekly discuss who is working on what 
-- consider creating small sub-tasks for each of the epics if the person working on it wants and needs taht
+- consider creating small sub-tasks for each of the epics if the person working on it wants and needs that
