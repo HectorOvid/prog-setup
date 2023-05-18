@@ -16,6 +16,11 @@ the right, we value the items on the left more.
 
 https://agilemanifesto.org/iso/en/manifesto.html
 
+### Imo good additions
+
+- Kaizen - Continuous improvement
+
+
 
 ## Is scrum agile?
 
