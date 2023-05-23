@@ -28,6 +28,13 @@ Agile should be:
   - efficient teamwork
 - delivering value to customers
 
+### Note
+
+Even the best processes etc. will only help you delivering quality software
+if you also have technical expertise.
+
+It is never enough to nurture and improve processes.
+You always need to get better at programming, designing architecture etc, too!
 
 ## Is scrum agile?
 
