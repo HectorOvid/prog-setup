@@ -20,6 +20,13 @@ https://agilemanifesto.org/iso/en/manifesto.html
 
 - Kaizen - Continuous improvement
 
+Agile should be:
+
+- doing things right
+- improve communication
+  - shorten feedbackloops
+  - efficient teamwork
+- delivering value to customers
 
 
 ## Is scrum agile?
