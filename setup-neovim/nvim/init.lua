@@ -1,2 +1,2 @@
 require("toso")
-print("Hi, initializing via lua :)")
+print("Tobias' nvim config via lua is here :D")

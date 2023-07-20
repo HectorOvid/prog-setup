@@ -1,4 +1,5 @@
 -- >  initial setup : Primeagen: 0 to LSP : Neovim RC from scratch
+NOTE: only works for nvim v0.9.+
 
 
 
