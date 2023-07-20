@@ -42,8 +42,8 @@ git push origin <main/master>
 - git-scm.com/book/en/v2/Git-Branching-Rebasing
 
 
-from current branch to specified : git rebase master
-git checkout master
+go to target branch                   : git checkout main
+get the commits from specified branch : git rebase FROM_BRANCH_NAME
 
 
 ## Commands
