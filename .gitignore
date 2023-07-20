@@ -1,1 +1,4 @@
 **/nvim-linux64/
+
+# locally created files from plugins
+**/*_compiled.lua
