@@ -53,6 +53,8 @@ show current    : git status              : even shows further command options :
 un-add		: git reset <file>
 add to CL	: git add <-A|file> 
 
+diff staged file : git diff --staged <NAME of Added File>
+
 ### Branch
      create and co   : git checkout -b NAME
 safe delete branch   : git branch -d NAME
