@@ -64,3 +64,14 @@ force delete branch  : git branch -D NAME
 ### create command alias
 Example:
 git config --global alias.unadd 'reset HEAD --'
+
+## Authenticate
+to push to github you need to authenticate via token
+
+### generate token at github: Profile Pic > Settings > Developer Settings > Generate Token
+
+### add the token to your repo's remote/origin url:
+check remote url via   : git remote -v
+-> see acto file :) and
+https://stackoverflow.com/questions/18935539/authenticate-with-github-using-a-token
+

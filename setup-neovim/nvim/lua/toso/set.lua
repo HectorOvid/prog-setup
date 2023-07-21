@@ -16,6 +16,8 @@ vim.opt.wrap = false
 
 vim.opt.swapfile = false
 vim.opt.backup = false
+-- this way undotree plugin can keep the history across differen vim sessions
+-- that means you can undo even after closing vim and opening it up again :D
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undofile = true
 
