@@ -75,5 +75,8 @@ to push to github you need to authenticate via token
 ### add the token to your repo's remote/origin url:
 check remote url via   : git remote -v
 -> see acto file :) and
+
+git remote set-url origin https://[APPLICATION]:[NEW TOKEN]@github.com/[ORGANISATION]/[REPO].git
+
 https://stackoverflow.com/questions/18935539/authenticate-with-github-using-a-token
 
