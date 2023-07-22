@@ -1,3 +1,5 @@
+-- SETTINGS
+--
 -- insert cursor is the same as the others
 -- vim.opt.guicursor = ""
 
@@ -31,9 +33,13 @@ vim.opt.termguicolors = true
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
+--
+-- show matching braces
+vim.opt.showmatch = true
 
 vim.opt.updatetime = 50
 
+vim.opt.textwidth = 120
 vim.opt.colorcolumn = "100"
 
 vim.g.mapleader = " "

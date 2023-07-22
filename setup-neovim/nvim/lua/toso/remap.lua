@@ -1,3 +1,5 @@
+-- KEYMAPPINGS
+--
 -- make it easy to open/close files 
 vim.g.mapleader = " "
 
