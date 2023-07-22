@@ -1,6 +1,5 @@
 #!/usr/bin/bash
 
-mkdir nvim
 
 # echo Adding xdg env to .profile
 # echo "export XDG_CONFIG_HOME=${PWD}" >> ~/.profile
@@ -8,21 +7,21 @@ mkdir nvim
 
 
 
-echo Creating configs for nvim
-cd nvim
-touch init.lua
-echo "require(\"toso\")" >> init.lua
-echo "print(\"Hi, initializing via lua :)\")" >> init.lua
+if [[ "$ALREADY" == *"nvim"* ]] ; then
+  echo "nvim already installed at: $ALREADY"
+else
+  echo "Downloading nvim ..."
+  wget -c https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz -O - | tar -xz
 
-mkdir lua
-cd lua
+  echo "Adding to PATH in .profile"
+  echo "export PATH=\$PATH:${PWD}/nvim-linux64/bin" >> ~/.profile
+  source ~/.profile
+fi
 
-mkdir toso
-cd toso
-touch init.lua
-echo "print(\"Hi, TOSO was hjere\")" >> init.lua
 
-touch remap.lua
-echo "-- make it easy to open/close files " >> remap.lua
-echo "vim.g.mapleader = \" \"" >> remap.lua
+
+# todo add to .bash_aliases
+# alias vim=nvim
+
+
 
