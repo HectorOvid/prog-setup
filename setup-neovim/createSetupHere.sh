@@ -1,9 +1,6 @@
 #!/usr/bin/bash
 
 
-# echo Adding xdg env to .profile
-# echo "export XDG_CONFIG_HOME=${PWD}" >> ~/.profile
-# source ~/.profile
 
 
 
@@ -20,8 +17,22 @@ fi
 
 
 
+
+
+#################################################################################
+
+# add to .profile , see: https://stackoverflow.com/questions/2596805/how-do-i-make-git-use-the-editor-of-my-choice-for-editing-commit-messages
+# export VISUAL=vim
+# export EDITOR="$VISUAL"
+# export GIT_EDITOR="$VISUAL"
+
+# echo Adding xdg env to .profile
+# echo "export XDG_CONFIG_HOME=${PWD}" >> ~/.profile
+# source ~/.profile
+
+
+
+#################################################################################
+
 # todo add to .bash_aliases
 # alias vim=nvim
-
-
-
