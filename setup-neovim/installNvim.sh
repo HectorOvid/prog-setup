@@ -26,12 +26,13 @@ nvim -v
 # sudo update-alternatives --install /usr/bin/editor editor /usr/bin/nvim 60
 # sudo update-alternatives --config editor
 
-NVIM_PACKAGE_MANAGER_HOME=~/.local/share/nvim/site/pack/packer/start/packer.nvim
-if test -d "$NVIM_PACKAGE_MANAGER_HOME"; then
-	echo "You already have the package manager :) at $NVIM_PACKAGE_MANAGER_HOME"
-else
-	echo "Getting package manager, installing to $NVIM_PACKAGE_MANAGER_HOME"
-        git clone --depth 1 https://github.com/wbthomason/packer.nvim \
-		"$NVIM_PACKAGE_MANAGER_HOME"
-fi
+# NOW USING LAZY VIM instead of these:
+# NVIM_PACKAGE_MANAGER_HOME=~/.local/share/nvim/site/pack/packer/start/packer.nvim
+# if test -d "$NVIM_PACKAGE_MANAGER_HOME"; then
+#	echo "You already have the package manager :) at $NVIM_PACKAGE_MANAGER_HOME"
+# else
+# 	echo "Getting package manager, installing to $NVIM_PACKAGE_MANAGER_HOME"
+#        git clone --depth 1 https://github.com/wbthomason/packer.nvim \
+#		"$NVIM_PACKAGE_MANAGER_HOME"
+#fi
 

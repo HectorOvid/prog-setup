@@ -75,9 +75,21 @@ command:
 
 Neovim is going to look at the first position: XDG_CONFIG_HOME
 
+OR
+
+just put the config at:
+
+~/.config/nvim
+
+
+### Mason - manager for lsp etc.
+Open cmd:
+`leader+cm`
+
 
 ## Commands
 
 ### :so
 
 sources the current file, e.g. to update configuations to take effect
+

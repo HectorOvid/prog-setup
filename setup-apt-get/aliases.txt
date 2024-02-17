@@ -1,0 +1,5 @@
+# todo add to .bash_aliases
+
+alias vim=nvim
+alias py=python3
+
