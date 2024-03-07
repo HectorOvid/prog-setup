@@ -1,6 +1,4 @@
--- >  initial setup : Primeagen: 0 to LSP : Neovim RC from scratch
-NOTE: only works for nvim v0.9.+
-
+Initial setup: lazyvim.org
 
 
 Quick intro: neovim.io & Fireship youtube 100 seconds of Neovim :)
@@ -49,17 +47,7 @@ nvim/
 ----init.lua
 
 
-PackageManager, e.g. PACKER
 
-packages:
-
-colortheme:
-{
-  return require('packer').startup(function(use)
-     use 'navarasu/onedark.vim'
-     ...
-  use)
-}
 lsp server: ---
 highlighting: treesitter
 moving in direcotories: nvim tree
