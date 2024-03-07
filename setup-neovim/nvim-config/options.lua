@@ -45,3 +45,7 @@ vim.opt.textwidth = 120
 vim.opt.colorcolumn = "100"
 
 vim.g.mapleader = " "
+
+-- do not hide backticks in markdown etc.
+-- :h 'conceallevel'
+vim.opt.conceallevel = 0
