@@ -26,6 +26,12 @@
 | `git rebase <FROM_B_NAME>  ` | apply any commits of current branch ahead of specified one |
 
 
+#### rewriting history -- squash, rebase
+|                              |                                                            |
+|------------------------------|------------------------------------------------------------|
+|`git rebase -i HEAD~3        `| interactively be able to select from the last 3 commits which commits to put together |
+
+
 
 ### temporary stashing
 
