@@ -15,7 +15,6 @@ vim.opt.smartindent = true
 
 vim.opt.wrap = false
 
-
 vim.opt.swapfile = false
 vim.opt.backup = false
 -- this way undotree plugin can keep the history across differen vim sessions
@@ -38,6 +37,9 @@ vim.opt.isfname:append("@-@")
 vim.opt.showmatch = true
 
 vim.opt.updatetime = 50
+
+-- number of ex commands to remember
+vim.opt.history = 200
 
 vim.opt.textwidth = 120
 vim.opt.colorcolumn = "100"
