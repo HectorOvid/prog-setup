@@ -7,6 +7,7 @@ Tip 47: Consider rebasing before merging :)
 git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows
 
 
+## Setup -> see setup-git
 
 
 ## FB based

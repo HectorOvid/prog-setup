@@ -106,7 +106,7 @@ See
 
 | Commnands            |                                                            |
 |----------------------|------------------------------------------------------------|
-| `leader f t`         | open terminal                                              |
+| `leader f t`         | &#128223; open terminal                                    |
 | `exit`               | to close terminal again                                    |
 |                      |                                                            |
 | `:!<CMD>` eg `:!ls`  | execute command in line                                    |
