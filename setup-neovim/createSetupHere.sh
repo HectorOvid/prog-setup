@@ -1,23 +1,15 @@
 #!/usr/bin/bash
 
-
-
-
-
-if [[ "$ALREADY" == *"nvim"* ]] ; then
-  echo "nvim already installed at: $ALREADY"
+if [[ "$ALREADY" == *"nvim"* ]]; then
+	echo "nvim already installed at: $ALREADY"
 else
-  echo "Downloading nvim ..."
-  wget -c https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz -O - | tar -xz
+	echo "Downloading nvim ..."
+	wget -c https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz -O - | tar -xz
 
-  echo "Adding to PATH in .profile"
-  echo "export PATH=\$PATH:${PWD}/nvim-linux64/bin" >> ~/.profile
-  source ~/.profile
+	echo "Adding to PATH in .profile"
+	echo "export PATH=\$PATH:${PWD}/nvim-linux64/bin" >>~/.profile
+	source ~/.profile
 fi
-
-
-
-
 
 #################################################################################
 
@@ -29,8 +21,6 @@ fi
 # echo Adding xdg env to .profile
 # echo "export XDG_CONFIG_HOME=${PWD}" >> ~/.profile
 # source ~/.profile
-
-
 
 #################################################################################
 

@@ -1,8 +1,11 @@
 return {
-  {
-    "ThePrimeagen/harpoon",
-    branch = "harpoon2",
-  },
+	{
+		"ThePrimeagen/harpoon",
+		branch = "harpoon2",
+		config = function()
+			require("harpoon"):setup()
+		end,
+	},
 }
 
 -- -- vim.keymap.set("n", "<leader>a", mark.add_file)
