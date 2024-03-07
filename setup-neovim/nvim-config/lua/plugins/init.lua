@@ -23,6 +23,15 @@ return {
 		opts = { use_diagnostic_signs = true },
 	},
 
+	-- disbling flash search keymap to have "s" insert
+	{
+		"folke/flash.nvim",
+		keys = {
+			-- disable the default flash keymap
+			{ "s", mode = { "n", "x", "o" }, false },
+		},
+	},
+
 	-- TODO consider plugins:
 	-- -- "tpope/vim-fugitive"
 	-- -- "folke/zen-mode"

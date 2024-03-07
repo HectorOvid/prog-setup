@@ -2,9 +2,18 @@ return {
 	{
 		"ThePrimeagen/harpoon",
 		branch = "harpoon2",
-		config = function()
-			require("harpoon"):setup()
-		end,
+		-- config = function()
+		-- 	require("harpoon"):setup()
+		-- end,
+		opts = {
+			menu = {
+				width = vim.api.nvim_win_get_width(0) - 4,
+			},
+		},
+		dependenices = {
+			"nvim-lua/plenary.nvim",
+			"nvim-telescope/telescope.nvim",
+		},
 	},
 }
 
