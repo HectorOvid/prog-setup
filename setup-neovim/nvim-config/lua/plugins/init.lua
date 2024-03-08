@@ -81,16 +81,19 @@ return {
 
 	{
 		"nvim-neo-tree/neo-tree.nvim",
-		keys = {
-			{
-				"<leader>fe",
-				function()
-					require("neo-tree.command").execute({ toggle = true, dir = vim.loop.cwd() })
-				end,
-				desc = "Explorer NeoTree (cwd dir)",
-			},
-			{ "<leader>e", "<leader>fe", desc = "Explorer NeoTree (cwd dir)", remap = true },
-		},
+	},
+
+	-- preview MARKDOWN files
+	{
+		"toppair/peek.nvim",
+		event = { "VeryLazy" },
+		build = "deno task --quiet build:fast",
+		config = function()
+			require("peek").setup()
+			-- refer to `configuration to change defaults`
+			vim.api.nvim_create_user_command("PeekOpen", require("peek").open, {})
+			vim.api.nvim_create_user_command("PeekClose", require("peek").close, {})
+		end,
 	},
 
 	--

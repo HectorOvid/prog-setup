@@ -24,7 +24,7 @@ return {
 					"gradle_ls",
 					"groovyls",
 					"jsonls",
-					"java_language_server",
+					"jdtls", -- java @ https://github.com/eclipse-jdtls/eclipse.jdt.ls
 					"kotlin_language_server",
 					"marksman", -- markdown
 					-- "yamlls",
