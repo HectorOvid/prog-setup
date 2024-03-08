@@ -1,4 +1,4 @@
-print("Hectorovids Plugins init, setting up all the small mini plugins")
+-- -- print("Hectorovids Plugins init, setting up all the small mini plugins")
 
 return {
 	-- prettier undo visualization
@@ -19,8 +19,24 @@ return {
 	-- show diagnostics, errors and jump in between them
 	{
 		"folke/trouble.nvim",
-		-- opts will be merged with the parent spec
-		opts = { use_diagnostic_signs = true },
+		config = function()
+			local trouble = require("trouble")
+			trouble.setup({
+				use_diagnostic_signs = true,
+			})
+
+			vim.keymap.set("n", "<leader>tt", function()
+				trouble.toggle()
+			end)
+
+			vim.keymap.set("n", "<leader>tn", function()
+				trouble.next({ skip_groups = true, jump = true })
+			end)
+
+			vim.keymap.set("n", "<leader>tp", function()
+				trouble.previous({ skip_groups = true, jump = true })
+			end)
+		end,
 	},
 
 	-- disbling flash search keymap to have "s" insert
@@ -32,8 +48,44 @@ return {
 		},
 	},
 
+	-- opens the current buffer in a new full-screen floating window
+	{
+		-- open zen window with `:ZenMode`
+		-- close zen window with `:quit` or `:close`
+		"folke/zen-mode.nvim",
+		opts = {
+			-- your configuration comes here
+			-- or leave it empty to use the default settings
+			-- refer to the configuration section below
+		},
+	},
+
+	{
+		-- Hide non-active code segements
+		-- toggle `:Twilight`
+		-- enable `:TwilightEnable`
+		-- disable `:TwilightDisable`
+		"folke/twilight.nvim",
+		opts = {
+			-- your configuration comes here
+			-- or leave it empty to use the default settings
+			-- refer to the configuration section below
+		},
+	},
+
+	{
+		-- create pairs of parenthesis or ", however we skip this for now
+		"echasnovski/mini.pairs",
+		enabled = false,
+	},
+
+	--
+	--
+	--
+	--
 	-- TODO consider plugins:
 	-- -- "tpope/vim-fugitive"
-	-- -- "folke/zen-mode"
-	-- -- "laytan/cloak"
+	-- -- "laytan/cloak" -- hide content of files (e.g. by extension to avoid doxing yourself)
+	--
+	-- "oil.nvim" -- edit pwd
 }

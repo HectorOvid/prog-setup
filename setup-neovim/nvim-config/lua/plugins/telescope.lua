@@ -1,5 +1,7 @@
 return {
-	-- change some telescope options and a keymap to browse plugin files
+	-- 
+	-- FIND, FILTER and SELECT FILES 
+	--
 	{
 		"nvim-telescope/telescope.nvim",
 		keys = {
@@ -24,6 +26,8 @@ return {
 	},
 }
 
+-- -- Primeagen's
+-- --
 -- -- local builtin = require('telescope.builtin')
 -- -- -- space + P_roject F_iles
 -- -- vim.keymap.set('n', '<leader>pf', builtin.find_files, {})
