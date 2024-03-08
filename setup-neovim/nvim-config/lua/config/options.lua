@@ -11,6 +11,8 @@
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
+-- FYI, alternatively could be done by:
+-- -- vim.cmd("set tabstop=4")
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4

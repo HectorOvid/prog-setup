@@ -2,8 +2,8 @@ function ColorMyPencils(color)
 	color = color or "rose-pine"
 	vim.cmd.colorscheme(color)
 
-	vim.api.nvim_set_hl(0, "Normal", {bg = "none"})
-	vim.api.nvim_set_hl(0, "NormalFloat", {bg = "none"})
+	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+	vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 end
 
 return {
@@ -13,12 +13,13 @@ return {
 		"ellisonleao/gruvbox.nvim",
 	},
 	{
+		-- TODO or maybe catppuccin
 		"rose-pine/neovim",
 		name = "rose-pine",
-		config = function() 
+		config = function()
 			vim.cmd("colorscheme rose-pine")
 			ColorMyPencils()
-		end
+		end,
 	},
 
 	-- Configure LazyVim to load color scheme

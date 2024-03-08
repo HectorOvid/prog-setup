@@ -82,10 +82,14 @@ return {
 	--
 	--
 	--
+	-- -- have a nerd font and use it in terminal
+	-- neotree
 	--
 	-- TODO consider plugins:
 	-- -- "tpope/vim-fugitive"
 	-- -- "laytan/cloak" -- hide content of files (e.g. by extension to avoid doxing yourself)
+	-- folke/todo-comments.nvim
 	--
+	-- EHER NICHT, not sure ob really worth it ... with harpoon + telescope ...:
 	-- "oil.nvim" -- edit pwd
 }

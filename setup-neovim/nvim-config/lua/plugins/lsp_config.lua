@@ -1,34 +1,65 @@
 return {
-  ------ LSP
-  {
-    -- package manager for LSP servers, DAP servers, linters and formatters
-    "williamboman/mason.nvim",
-    opts = function(_, opts)
-      vim.list_extend(opts.ensure_installed, {
-        "stylua",
-        "shellcheck",
-        "shfmt",
-        -- "flake8",
-      })
-    end,
-  },
+	------ LSP
+	-- `:LspInfo` show attached LSP Servers
+	-- `:Mason` open up mason overview
+	{
+		-- package manager for LSP servers, DAP servers, linters and formatters
+		"williamboman/mason.nvim",
+		config = function()
+			require("mason").setup()
+		end,
+	},
+	{
+		"neovim/nvim-lspconfig",
+		config = function()
+			require("mason-lspconfig").setup({
+				-- -- -- If you want to install a language server for a particular file type
+				-- -- -- use the command :LspInstall.
+				-- -- -- And when the installation is done restart neovim.
+				ensure_installed = {
+					"lua_ls",
+					-- "clangd", -- C / C++
+					"dockerls",
+					"gopls",
+					"gradle_ls",
+					"groovyls",
+					"jsonls",
+					"java_language_server",
+					"kotlin_language_server",
+					"marksman", -- markdown
+					-- "yamlls",
+				},
+				-- NO IDEA IF THIS IS NEEDED ....
+				-- handlers = {
+				-- 	function(server_name)
+				-- 		require("lspconfig")[server_name].setup({
+				-- 			on_attach = attach,
+				-- 		})
+				-- 	end,
+				-- },
+			})
+		end,
+	},
+	{
+		"neovim/nvim-lspconfig",
+		config = function()
+			-- attaching LSP Servers example: https://github.com/neovim/nvim-lspconfig
+			local lspconfig = require("lspconfig")
+			lspconfig.lua_ls.setup({})
 
-  {
-    "williamboman/mason-lspconfig.nvim",
-  },
+			lspconfig.gopls.setup({})
 
-  -- add pyright to lspconfig
-  {
-    "neovim/nvim-lspconfig",
-  },
+			-- https://sookocheff.com/post/vim/neovim-java-ide/
+			lspconfig.java_language_server.setup({})
+		end,
+	},
+
+	-- TODO scala with LSP: https://github.com/scalameta/nvim-metals
 }
 
 -- -- -- refers to the combining plugin of https://github.com/VonHeikemen/lsp-zero.nvim/tree/v2.x
 -- -- local lsp = require('lsp-zero').preset("recommended")
 -- --
--- -- -- If you want to install a language server for a particular file type
--- -- -- use the command :LspInstall.
--- -- -- And when the installation is done restart neovim.
 -- --
 -- -- local cmp = require('cmp')
 -- -- local cmp_select = { behavior = cmp.SelectBehavior.Select }

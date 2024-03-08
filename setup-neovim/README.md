@@ -81,3 +81,9 @@ Open cmd:
 
 sources the current file, e.g. to update configuations to take effect
 
+
+## Autocompletion
+
+vim-cmp
+is a completion engine, that may use even different sources
+of suggestion providers :)
