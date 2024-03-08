@@ -5,4 +5,4 @@
 -- NOTE this loads the file from "config/lazy.lua"
 require("config.lazy")
 
--- -- print("Hectorovids Root init file done with lazy.")
+-- -- print("Hectoovids Root init file done with lazy.")

@@ -1,19 +1,19 @@
 return {
-	-- 
-	-- FIND, FILTER and SELECT FILES 
+	--
+	-- FIND, FILTER and SELECT FILES
 	--
 	{
 		"nvim-telescope/telescope.nvim",
-		keys = {
-			{
-				"<leader>pf",
-				function()
-					require("telescope.builtin").find_files()
-				end,
-				mode = "n",
-			},
-		},
-		-- change some options
+		-- keys = {
+		-- 	{
+		-- 		"<leader>pf",
+		-- 		function()
+		-- 			require("telescope.builtin").find_files()
+		-- 		end,
+		-- 		mode = "n",
+		-- 	},
+		-- },
+		-- -- change some options
 		opts = {
 			defaults = {
 				layout_strategy = "horizontal",

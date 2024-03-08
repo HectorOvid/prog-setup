@@ -29,14 +29,6 @@ return {
 					"marksman", -- markdown
 					-- "yamlls",
 				},
-				-- NO IDEA IF THIS IS NEEDED ....
-				-- handlers = {
-				-- 	function(server_name)
-				-- 		require("lspconfig")[server_name].setup({
-				-- 			on_attach = attach,
-				-- 		})
-				-- 	end,
-				-- },
 			})
 		end,
 	},

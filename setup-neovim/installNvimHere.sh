@@ -1,15 +1,21 @@
 #!/usr/bin/bash
 
+ALREADY=$(which nvim)
 if [[ "$ALREADY" == *"nvim"* ]]; then
 	echo "nvim already installed at: $ALREADY"
 else
-	echo "Downloading nvim ..."
+	echo "Downloading nvim to current dir '$PWD' ..."
 	wget -c https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz -O - | tar -xz
 
 	echo "Adding to PATH in .profile"
 	echo "export PATH=\$PATH:${PWD}/nvim-linux64/bin" >>~/.profile
 	source ~/.profile
 fi
+
+echo ""
+echo "Installed version:"
+
+nvim -v
 
 #################################################################################
 
@@ -18,11 +24,10 @@ fi
 # export EDITOR="$VISUAL"
 # export GIT_EDITOR="$VISUAL"
 
-# echo Adding xdg env to .profile
-# echo "export XDG_CONFIG_HOME=${PWD}" >> ~/.profile
-# source ~/.profile
-
 #################################################################################
 
 # todo add to .bash_aliases
 # alias vim=nvim
+#
+#
+# consider creating a token file for git

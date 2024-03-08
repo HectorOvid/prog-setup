@@ -2,30 +2,14 @@
 -- Default autocmds that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/autocmds.lua
 -- Add any additional autocmds here
 
--- -- --local myGroup = vim.api.nvim_create_augroup("toso_auto_group", { clear = true })
--- -- ---- First argument is an event, see
--- -- ---- :help event
--- -- ----
--- -- ---- Then
--- -- --vim.api.nvim_create_autocmd('LspAttach', {
--- -- --
--- -- --    command = "",
--- -- --    group = myGroup,
--- -- --
--- -- --
--- -- --
--- -- --})
---
---
---
-
-vim.api.nvim_create_autocmd("TextYankPost", {
-	desc = "Highlight when yanking (copying) text",
-	group = vim.api.nvim_create_augroup("highlight-yanky", { clear = true }),
-	callback = function()
-		vim.highlight.on_yank()
-	end,
-})
+-- -- -- Example of some autocmd function:
+-- vim.api.nvim_create_autocmd("TextYankPost", {
+-- 	desc = "Highlight when yanking (copying) text",
+-- 	group = vim.api.nvim_create_augroup("highlight-yanky", { clear = true }),
+-- 	callback = function()
+-- 		vim.highlight.on_yank()
+-- 	end,
+-- })
 
 -- -- -- LSP
 
