@@ -16,7 +16,7 @@
 - create local feature branch
 `git branch feature-5`
 
-- switch to fb branch (or in one command: git checkout -b feature-5 
+- switch to fb branch (or in one command: `git checkout -b feature-5` or 
 `git checkout feature-5`
 
 ....
