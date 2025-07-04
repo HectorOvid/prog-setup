@@ -100,9 +100,9 @@
 | `git clone <URL>           ` | copy local repo                                            |
 |                              |                                                            |
 | Ignore patterns              | for .gitignore file                                        |
-| `logs/                     ` |                                                            |
-| `*.jar                     ` |                                                            |
-| `pattern*/                 ` |                                                            |
+| - `logs/                     ` |                                                            |
+| - `*.jar                     ` |                                                            |
+| - `pattern*/                 ` |                                                            |
 | `git config --global core.excludeFile '~/.config/git/.gitignore'` | set a global default gitignore :D, e.g. for ide folder |
 |                              |                                                            |
 | `git config --global core.autocrlf false` | [handle line-endings in windows](https://stackoverflow.com/questions/2517190/how-do-i-force-git-to-use-lf-instead-of-crlf-under-windows) |
@@ -110,8 +110,8 @@
 | `git config --global init.defaultBranch main` | set default branch name                                                                                                       |
 |                              |                                                            |
 |                                                 | [GPG signed in bitbucket](https://confluence.atlassian.com/bitbucketserver/using-gpg-keys-913477014.html)                                                               |
-| `git config <--global|...> commit.gpgsign true` | no need to sign each commit/tag with -S if activated by default |
-| `git config <--global|...> tag.gpgsign true` | no need to sign each commit/tag with -S if activated by default |
+| `git config <--global\|...> commit.gpgsign true` | no need to sign each commit/tag with -S if activated by default |
+| `git config <--global\|...> tag.gpgsign true` | no need to sign each commit/tag with -S if activated by default |
 | `git commit --amend -S                     ` | forgot to sigh last commit, hence re-commit signed              |
 
 
