@@ -103,6 +103,7 @@
 | `logs/                     ` |                                                            |
 | `*.jar                     ` |                                                            |
 | `pattern*/                 ` |                                                            |
+| `git config --global core.excludeFile '~/.config/git/.gitignore'` | set a global default gitignore :D, e.g. for ide folder |
 |                              |                                                            |
 | `git config --global core.autocrlf false` | [handle line-endings in windows](https://stackoverflow.com/questions/2517190/how-do-i-force-git-to-use-lf-instead-of-crlf-under-windows) |
 | `git config --global core.eol lf        ` | [use linux endings  ](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings) |
