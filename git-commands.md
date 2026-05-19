@@ -14,7 +14,8 @@
 |                                |                                                            |
 | `git push <ALIAS> <BRANCH> `   | transmit local BRANCH to given remote ALIAS                |
 | `git push <origin> --delete <BRANCH> `   | delete remote BRANCH to given remote ALIAS/origin|
-
+|                                |                                                            |
+| `git push --force-with-lease  ... `   | to overwrite remote history -- prefer over just --force! |
 
 
 
