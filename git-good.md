@@ -5,7 +5,7 @@
 - [Consider Rebase before merging](git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows)
 - [Squashing commits, cleanup many small commits](https://git-scm.com/book/id/v2/Git-Tools-Rewriting-History#_squashing)
 - [Worktrees](https://www.youtube.com/watch?v=2uEqYw-N8uE)
-
+- Setup credential storage: https://git-scm.com/doc/credential-helpers
 
 
 ## FB based
